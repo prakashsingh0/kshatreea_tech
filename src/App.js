@@ -4,6 +4,7 @@ import Nav from "./components/Nav";
 import HeroBanner from "./components/HeroBanner";
 import Services from "./components/Services";
 import About from "./components/About";
+import Training from "./components/Training";
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
       <Services />
 
       {/* Later */}
-      {/* <Training /> */}
+      <Training />
       <About />
       {/* <Contact /> */}
     </>
