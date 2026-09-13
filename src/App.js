@@ -5,6 +5,7 @@ import HeroBanner from "./components/HeroBanner";
 import Services from "./components/Services";
 import About from "./components/About";
 import Training from "./components/Training";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -15,10 +16,10 @@ function App() {
 
       <Services />
 
-      {/* Later */}
+     
       <Training />
       <About />
-      {/* <Contact /> */}
+      <Contact />
     </>
   );
 }
