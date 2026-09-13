@@ -3,6 +3,7 @@ import React from "react";
 import Nav from "./components/Nav";
 import HeroBanner from "./components/HeroBanner";
 import Services from "./components/Services";
+import About from "./components/About";
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
 
       {/* Later */}
       {/* <Training /> */}
-      {/* <About /> */}
+      <About />
       {/* <Contact /> */}
     </>
   );
