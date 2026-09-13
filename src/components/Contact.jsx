@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Contact.css";
+import brandlogo from './images/kt.png'
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -153,7 +154,8 @@ const Contact = () => {
             </div>
 
             <div className="contact-form-mark">
-              KT
+              <img src={brandlogo} alt="logo"  style={{height:45, borderRadius:12}}/> 
+              
             </div>
 
           </div>
