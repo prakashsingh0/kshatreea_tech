@@ -1,0 +1,48 @@
+
+
+.navbar-cta {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  padding: 12px 20px;
+
+  border: none;
+  border-radius: 9px;
+
+  background: linear-gradient(
+    135deg,
+    #cb2f1d,
+    #d82020
+  );
+
+  color: #07111e;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  white-space: nowrap;
+
+  box-shadow:
+    0 6px 20px rgba(225, 165, 44, 0.15);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.navbar-cta span {
+  font-size: 19px;
+}
+
+.navbar-cta:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 9px 25px rgba(225, 165, 44, 0.28);
+}
