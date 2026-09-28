@@ -43,6 +43,7 @@ const Contact = () => {
       });
 
       const data = await response.json();
+      console.log(data?.message)
 
       if (!response.ok || !data.success) {
         throw new Error(
@@ -293,19 +294,19 @@ const Contact = () => {
                     Select an option
                   </option>
 
-                  <option value="software">
+                  <option value="software Development">
                     Software Development
                   </option>
 
-                  <option value="cloud">
+                  <option value="Cloud Solutions">
                     Cloud Solutions
                   </option>
 
-                  <option value="devops">
+                  <option value="DevOps & Automation">
                     DevOps & Automation
                   </option>
 
-                  <option value="monitoring">
+                  <option value="IT Monitoring">
                     IT Monitoring
                   </option>
 
@@ -368,7 +369,8 @@ const Contact = () => {
 
             {submitted && (
               <div className="form-success">
-                ✓ Thank you. We'll get back to you soon.
+                {/* ✓ Thank you. We'll get back to you soon. */}
+                
               </div>
             )}
 
