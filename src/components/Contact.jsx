@@ -14,6 +14,7 @@ const Contact = () => {
   });
 
   const [submitted, setSubmitted] = useState(false);
+  const [message, setMessage] = useState(" ")
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
@@ -52,8 +53,8 @@ const Contact = () => {
       }
 
       console.log("Contact response:", data);
-
-      setSubmitted(true);
+      setMessage(data.message)
+      setSubmitted(data?.success);
 
       setFormData({
         name: "",
@@ -369,7 +370,8 @@ const Contact = () => {
 
             {submitted && (
               <div className="form-success">
-                {/* ✓ Thank you. We'll get back to you soon. */}
+                
+                {message}
                 
               </div>
             )}
