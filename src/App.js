@@ -10,6 +10,7 @@ import Home from "./Academy/Home"
 import { Route, Routes } from "react-router-dom";
 import Login from "./Academy/Login";
 import Register from "./Academy/Register"
+import CourseDetails from "./Academy/CourseDetails";
 
 function App() {
   return (
@@ -32,6 +33,10 @@ function App() {
         <Route path="/academy/login" element={<Login />} />
         <Route path="/academy/signup" element={<Register />} />
         <Route path="/academy" element={<Home />} />
+        <Route
+          path="/academy/course/:slug"
+          element={<CourseDetails />}
+        />
       </Routes>
     </>
   );

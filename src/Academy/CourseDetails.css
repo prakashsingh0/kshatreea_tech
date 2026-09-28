@@ -1,0 +1,461 @@
+.CourseDetailsPage {
+  min-height: 100vh;
+  background: #0f1115;
+  color: #ffffff;
+}
+
+
+/* Hero */
+
+.CourseDetailsHero {
+  max-width: 1100px;
+
+  margin: 0 auto;
+
+  padding: 70px 30px 50px;
+
+  text-align: center;
+}
+
+.CourseDetailsIcon {
+  width: 100px;
+  height: 100px;
+
+  margin: 0 auto 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #1c1c1c;
+
+  border: 1px solid #333;
+
+  border-radius: 20px;
+
+  font-size: 55px;
+}
+
+.CourseDetailsBadge {
+  display: inline-block;
+
+  padding: 7px 15px;
+
+  background: #d4af37;
+  color: #111;
+
+  border-radius: 50px;
+
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.CourseDetailsHero h1 {
+  max-width: 800px;
+
+  margin: 18px auto 15px;
+
+  font-size: 42px;
+  line-height: 1.2;
+}
+
+.CourseDetailsHero > p {
+  max-width: 700px;
+
+  margin: 0 auto 30px;
+
+  color: #aaa;
+
+  line-height: 1.7;
+}
+
+
+/* Meta */
+
+.CourseMeta {
+  max-width: 800px;
+
+  margin: 0 auto 30px;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 12px;
+}
+
+.CourseMeta div {
+  padding: 15px;
+
+  background: #17191d;
+
+  border: 1px solid #292d33;
+
+  border-radius: 12px;
+}
+
+.CourseMeta span {
+  display: block;
+
+  margin-bottom: 6px;
+
+  color: #888;
+
+  font-size: 11px;
+}
+
+.CourseMeta strong {
+  font-size: 14px;
+}
+
+.FreeText {
+  color: #d4af37;
+}
+
+
+/* Buttons */
+
+.ApplyButton {
+  padding: 14px 28px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: #d4af37;
+  color: #111;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.ApplyButton:hover {
+  background: #e4c052;
+
+  transform: translateY(-2px);
+}
+
+.ApplyButton span {
+  margin-left: 8px;
+}
+
+
+/* Content */
+
+.CourseDetailsContent {
+  max-width: 1000px;
+
+  margin: 0 auto;
+
+  padding: 20px 30px 70px;
+}
+
+
+/* Sections */
+
+.CourseSection {
+  margin-bottom: 45px;
+}
+
+.CourseSection h2 {
+  margin-bottom: 15px;
+
+  font-size: 25px;
+
+  color: #ffffff;
+}
+
+.CourseSection p {
+  color: #aaa;
+
+  line-height: 1.8;
+}
+
+
+/* Highlights */
+
+.DetailsGrid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 12px;
+}
+
+.DetailItem {
+  padding: 15px;
+
+  background: #17191d;
+
+  border: 1px solid #292d33;
+
+  border-radius: 10px;
+
+  color: #ccc;
+}
+
+.DetailItem span {
+  margin-right: 10px;
+
+  color: #d4af37;
+
+  font-weight: bold;
+}
+
+
+/* Topics */
+
+.TopicsGrid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 10px;
+}
+
+.TopicItem {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 13px;
+
+  background: #17191d;
+
+  border-radius: 10px;
+
+  color: #ccc;
+}
+
+.TopicItem span {
+  width: 28px;
+  height: 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #d4af37;
+
+  color: #111;
+
+  border-radius: 50%;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+
+/* Projects */
+
+.ProjectsGrid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 12px;
+}
+
+.ProjectItem {
+  padding: 18px;
+
+  background: #17191d;
+
+  border: 1px solid #292d33;
+
+  border-radius: 10px;
+}
+
+.ProjectItem strong {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #d4af37;
+
+  font-size: 12px;
+}
+
+.ProjectItem span {
+  color: #ccc;
+}
+
+
+/* Eligibility */
+
+.EligibilityList {
+  margin: 0;
+
+  padding: 0;
+
+  list-style: none;
+}
+
+.EligibilityList li {
+  position: relative;
+
+  margin-bottom: 10px;
+
+  padding-left: 25px;
+
+  color: #ccc;
+}
+
+.EligibilityList li::before {
+  content: "✓";
+
+  position: absolute;
+
+  left: 0;
+
+  color: #d4af37;
+
+  font-weight: bold;
+}
+
+
+/* Platforms */
+
+.PlatformList {
+  display: flex;
+
+  gap: 12px;
+
+  flex-wrap: wrap;
+}
+
+.PlatformList span {
+  padding: 10px 15px;
+
+  background: #17191d;
+
+  border: 1px solid #292d33;
+
+  border-radius: 8px;
+
+  color: #ccc;
+}
+
+
+/* Certificate */
+
+.CertificateBox {
+  margin-bottom: 45px;
+
+  padding: 25px;
+
+  background: rgba(212, 175, 55, 0.08);
+
+  border: 1px solid rgba(212, 175, 55, 0.3);
+
+  border-radius: 15px;
+}
+
+.CertificateBox h2 {
+  margin-top: 0;
+
+  color: #d4af37;
+}
+
+.CertificateBox p {
+  margin-bottom: 0;
+
+  color: #ccc;
+
+  line-height: 1.7;
+}
+
+
+/* Bottom CTA */
+
+.BottomCTA {
+  padding: 45px 30px;
+
+  text-align: center;
+
+  background: #17191d;
+
+  border: 1px solid #292d33;
+
+  border-radius: 18px;
+}
+
+.BottomCTA h2 {
+  margin-top: 0;
+
+  font-size: 28px;
+}
+
+.BottomCTA p {
+  margin-bottom: 25px;
+
+  color: #aaa;
+}
+
+
+/* Not Found */
+
+.CourseNotFound {
+  min-height: 60vh;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 20px;
+
+  background: #0f1115;
+
+  color: white;
+}
+
+
+/* Responsive */
+
+@media (max-width: 900px) {
+
+  .CourseDetailsHero h1 {
+    font-size: 34px;
+  }
+
+  .CourseMeta {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+@media (max-width: 650px) {
+
+  .CourseDetailsHero {
+    padding: 45px 20px;
+  }
+
+  .CourseDetailsHero h1 {
+    font-size: 28px;
+  }
+
+  .CourseMeta {
+    grid-template-columns: 1fr;
+  }
+
+  .DetailsGrid,
+  .TopicsGrid,
+  .ProjectsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .CourseDetailsContent {
+    padding: 20px 20px 50px;
+  }
+
+}

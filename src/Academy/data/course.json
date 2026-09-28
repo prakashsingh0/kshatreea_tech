@@ -1,0 +1,92 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "slug": "python-development-automation",
+      "badge": "INTERNSHIP",
+      "title": "Python Development & Automation",
+      "description": "Learn Python from fundamentals to automation through practical assignments and real-world projects.",
+      "duration": "8 Weeks",
+      "mode": "Online",
+      "training": "FREE",
+      "certificate": "₹500 Optional",
+      "status": "Applications Open",
+      "icon": "🐍",
+
+      "overview": "This internship is designed for students and beginners who want to learn Python programming through practical exercises, automation tasks, and real-world projects.",
+
+      "eligibility": [
+        "College students",
+        "Recent graduates",
+        "Beginners learning Python",
+        "Students interested in software development",
+        "Students interested in automation"
+      ],
+
+      "highlights": [
+        "Live online classes",
+        "Practical assignments",
+        "Mini projects",
+        "Final project",
+        "Git & GitHub experience",
+        "Internship completion letter"
+      ],
+
+      "topics": [
+        "Python Fundamentals",
+        "Variables and Data Types",
+        "Conditional Statements",
+        "Loops",
+        "Functions",
+        "Lists, Tuples, Sets & Dictionaries",
+        "File Handling",
+        "Exception Handling",
+        "Modules and Packages",
+        "Object-Oriented Programming",
+        "APIs",
+        "Python Automation",
+        "Git & GitHub"
+      ],
+
+      "projects": [
+        "Expense Tracker",
+        "File Organizer",
+        "Log Analyzer",
+        "System Health Checker",
+        "Final Python Automation Project"
+      ],
+
+      "requirements": [
+        "Basic computer knowledge",
+        "Laptop or desktop",
+        "Internet connection",
+        "Willingness to learn and practice",
+        "VS Code or another Python IDE"
+      ],
+
+      "certificateDetails": "Students who successfully complete the internship requirements receive a completion letter. An optional internship certificate is available for ₹500.",
+
+      "schedule": "November 2026",
+      "classPlatform": [
+        "Google Meet",
+        "Microsoft Teams"
+      ]
+    },
+    {
+      "id": 2,
+      "badge": "COMING SOON",
+      "title": "Full Stack Web Development",
+      "description": "Learn modern frontend and backend development through practical projects.",
+      "duration": "10 Weeks",
+      "mode": "Online",
+      "training": "Coming Soon",
+      "features": [
+        "HTML & CSS",
+        "JavaScript",
+        "React",
+        "Node.js",
+        "MongoDB"
+      ]
+    }
+  ]
+}

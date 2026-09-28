@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./Contact.css";
-import brandlogo from './images/kt.png'
+import brandlogo from "./images/kt.png";
+
+const API_URL = "https://kshateeya-tech-server.vercel.app/";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -12,6 +14,8 @@ const Contact = () => {
   });
 
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -22,24 +26,57 @@ const Contact = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
-    console.log("Contact Form:", formData);
+    setLoading(true);
+    setSubmitted(false);
+    setError("");
 
-    setSubmitted(true);
+    try {
+      const response = await fetch(API_URL, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
 
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      subject: "",
-      message: "",
-    });
+      const data = await response.json();
 
-    setTimeout(() => {
-      setSubmitted(false);
-    }, 5000);
+      if (!response.ok || !data.success) {
+        throw new Error(
+          data.message || "Unable to send your message."
+        );
+      }
+
+      console.log("Contact response:", data);
+
+      setSubmitted(true);
+
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        subject: "",
+        message: "",
+      });
+
+      setTimeout(() => {
+        setSubmitted(false);
+      }, 5000);
+
+    } catch (error) {
+      console.error("Contact form error:", error);
+
+      setError(
+        error.message ||
+        "Something went wrong. Please try again."
+      );
+
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -78,7 +115,6 @@ const Contact = () => {
             DevOps solutions, IT automation, or practical technology
             training, we're here to understand your requirements.
           </p>
-
 
           {/* Contact Details */}
 
@@ -154,8 +190,14 @@ const Contact = () => {
             </div>
 
             <div className="contact-form-mark">
-              <img src={brandlogo} alt="logo"  style={{height:45, borderRadius:12}}/> 
-              
+              <img
+                src={brandlogo}
+                alt="Kshatreeya Tech Solutions"
+                style={{
+                  height: 45,
+                  borderRadius: 12
+                }}
+              />
             </div>
 
           </div>
@@ -224,9 +266,10 @@ const Contact = () => {
                   type="tel"
                   id="phone"
                   name="phone"
-                  placeholder="Your phone number"
+                  placeholder="Your 10 digit phone number"
                   value={formData.phone}
                   onChange={handleChange}
+                  required
                 />
 
               </div>
@@ -311,11 +354,12 @@ const Contact = () => {
             <button
               type="submit"
               className="contact-submit"
+              disabled={loading}
             >
 
-              Send Message
+              {loading ? "Sending..." : "Send Message"}
 
-              <span>→</span>
+              {!loading && <span>→</span>}
 
             </button>
 
@@ -325,6 +369,15 @@ const Contact = () => {
             {submitted && (
               <div className="form-success">
                 ✓ Thank you. We'll get back to you soon.
+              </div>
+            )}
+
+
+            {/* Error */}
+
+            {error && (
+              <div className="form-error">
+                ✕ {error}
               </div>
             )}
 
