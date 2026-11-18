@@ -3,7 +3,7 @@ import "./Contact.css";
 import brandlogo from "./images/kt.png";
 
 const API_URL = "https://kshateeya-tech-server.vercel.app/";
-
+// const API_URL = "http://127.0.0.1:8000/"
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",

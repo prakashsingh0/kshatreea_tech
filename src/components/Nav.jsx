@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import logo from "./images/logo.png";
 import "./Nav.css";
+import { Link } from "react-router-dom";
 
 function Nav() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -50,6 +51,7 @@ function Nav() {
         <a href="#contact" onClick={closeMenu}>
           Contact
         </a>
+        <Link to="/internships">Internship Opportunities</Link>
 
       </nav>
 
