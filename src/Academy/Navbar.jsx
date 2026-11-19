@@ -33,21 +33,10 @@ function Navbar() {
       {/* Navigation */}
       <nav className={`nav-links ${menuOpen ? "active" : ""}`}>
 
-        <a href="#profile" onClick={closeMenu}>
+        <Link to="/academy/profile" onClick={closeMenu}>
           Profile
-        </a>
+        </Link>
 
-        {/* <a href="#services" onClick={closeMenu}>
-          Services
-        </a>
-
-        <a href="#training" onClick={closeMenu}>
-          Training
-        </a>
-
-        <a href="#about" onClick={closeMenu}>
-          About
-        </a> */}
 
         <Link to="/academy/login" onClick={closeMenu}>
           Log Out

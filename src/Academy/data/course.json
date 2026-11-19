@@ -74,6 +74,7 @@
     },
     {
       "id": 2,
+      "slug": "Full-Stack-Web-Development",
       "badge": "COMING SOON",
       "title": "Full Stack Web Development",
       "description": "Learn modern frontend and backend development through practical projects.",

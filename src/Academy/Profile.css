@@ -1,0 +1,17 @@
+.profileContainer{
+    display: flex;
+    flex-direction: row;
+    margin-top: 85px;
+    
+}
+
+.sideBar{
+    width: 20%;
+    border-right: 2px solid ;
+    height: 87vh;
+    padding: 0 10px ;
+}
+
+.mainContainer{
+    padding: 0 10px;
+}
