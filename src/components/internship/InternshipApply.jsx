@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import "./InternshipApply.css";
 
-const API_URL = "https://kshateeya-tech-server.vercel.app/"
+const API_URL = "https://kshateeya-tech-server.vercel.app"
 
 function InternshipApply() {
     const { slug } = useParams();
